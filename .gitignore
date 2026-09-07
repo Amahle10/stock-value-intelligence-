@@ -1,0 +1,28 @@
+cat >> .gitignore <<'EOF'
+
+# Python virtual environments
+.venv/
+.venv*/
+venv/
+venv*/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Node
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+EOF
